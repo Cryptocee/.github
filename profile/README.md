@@ -60,10 +60,8 @@
 ### Who talks to whom
 
 ```text
-  FRONTEND ──────► BACKEND ◄────── DASHBOARD
+  cryptocee-app ──────► cryptocee-api ◄────── cryptocee-admin
                      │
-                     ├──► PostgreSQL / MySQL
-                     ├──► Redis
-                     └──► AI-PREDICT   (server-to-server only)
+                     └──► cryptocee-ai-predict  (server-to-server only)
 ```
 
