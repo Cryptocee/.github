@@ -11,10 +11,10 @@
 
 | Repo | Role |
 |------|------|
-| **BACKEND** | REST API + WebSocket hub, auth, business logic, DB, calls AI service |
-| **FRONTEND** | End-user UI; only talks to BACKEND |
-| **DASHBOARD** | Admin UI; only talks to BACKEND (admin routes) |
-| **AI-PREDICT** | Python FastAPI service: runs ML models, returns forecasts |
+| **cryptocee-api** | REST API + WebSocket hub, auth, business logic, DB, calls AI service |
+| **cryptocee-app** | End-user UI; only talks to BACKEND |
+| **cryptocee-admin** | Admin UI; only talks to BACKEND (admin routes) |
+| **cryptocee-ai-predict** | Python FastAPI service: runs ML models, returns forecasts |
 
 ---
 
