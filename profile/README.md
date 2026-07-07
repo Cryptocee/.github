@@ -18,7 +18,7 @@
 
 ---
 
-## 1. BACKEND
+## 1. cryptocee-api
 
 - Exposes **HTTP APIs** (and optionally **WebSocket**) to browsers and the admin app.
 - **Authenticates** users (e.g. JWT) and enforces **roles** (user vs admin).
@@ -30,7 +30,7 @@
 
 ---
 
-## 2. FRONTEND
+## 2. cryptocee-app
 
 - Renders the **customer** product (markets, charts, predictions, portfolio, etc.).
 - Sends **REST** requests to BACKEND (base URL + `/api/...`).
@@ -39,7 +39,7 @@
 
 ---
 
-## 3. DASHBOARD
+## 3. cryptocee-admin
 
 - Same pattern as FRONTEND, but for **admins**: users, analytics, logs, monitoring.
 - Calls BACKEND **admin** endpoints (still REST; same origin pattern: only BACKEND).
@@ -47,7 +47,7 @@
 
 ---
 
-## 4. AI-PREDICT
+## 4. cryptocee-ai-predict
 
 - Exposes a small **FastAPI** surface (e.g. `/predict`, `/predicts`) that accepts **symbol, interval, horizon**, etc.
 - Loads **ML/DL** models, runs inference, returns **numbers + confidence** (and any extra fields you define).
